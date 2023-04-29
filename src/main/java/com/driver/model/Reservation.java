@@ -20,11 +20,11 @@ public class Reservation {
 
      @ManyToOne
      @JoinColumn
-     Spot spot;
+     private Spot spot;
 
      @ManyToOne
      @JoinColumn
-     User user;
+      private User user;
 
      @OneToOne(mappedBy = "reservation",cascade = CascadeType.ALL)
      Payment payment;
